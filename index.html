@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>LoveMatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PAGE WELCOME -->
+<section id="welcome" class="page animate">
+    <h1>❤️ LoveMatch ❤️</h1>
+    <button id="startBtn">Commencer</button>
+    <div class="hearts-container"></div>
+
+</section>
+
+<!-- CHOIX SEXE -->
+<section id="chooseSex" class="page hidden">
+    <h1>Vous êtes :</h1>
+    <button id="girlBtn">Fille</button>
+    <button id="boyBtn">Garçon</button>
+</section>
+
+<!-- PAGE CHOIX : inscription ou connexion -->
+<section id="choice" class="page hidden">
+    <h1>Bienvenue</h1>
+
+    <button id="goRegister">Inscription</button>
+    <button id="goLogin">Connexion</button>
+</section>
+
+<!-- INSCRIPTION -->
+<section id="register" class="page hidden" >
+    <h1>Inscription</h1>
+
+    <input id="r_login" placeholder="Login"><br>
+    <input id="r_pass" type="password" placeholder="Mot de passe"><br>
+
+    <input id="r_nom" placeholder="Nom"><br>
+    <input id="r_prenom" placeholder="Prénom"><br>
+
+    <input id="r_age" type="number" placeholder="Âge"><br>
+    <input id="r_height" type="number" placeholder="Taille (cm)"><br>
+
+    <input id="r_job" placeholder="Travail / Études"><br>
+
+    <label>Sexe préféré :</label>
+    <select id="r_pref">
+        <option value="f">Filles</option>
+        <option value="m">Garçons</option>
+    </select><br>
+
+    <input id="r_photo" type="file"><br>
+
+    <button id="createAccountBtn">Créer compte</button>
+    <button id="toLoginBtn">Déjà un compte ?</button>
+</section>
+
+<!-- LOGIN -->
+<section id="login" class="page hidden">
+    <h1>Connexion</h1>
+
+    <input id="l_login" placeholder="Login"><br>
+    <input id="l_pass" placeholder="Mot de passe" type="password"><br>
+
+    <button id="loginBtn">Se connecter</button>
+</section>
+
+<!-- SUGGESTIONS -->
+<section id="dating" class="page hidden">
+    <h1>Suggestions</h1>
+
+    <div class="card">
+        <img id="profilePhoto" class="profile-img">
+        <h2 id="pName"></h2>
+        <p id="pAge"></p>
+        <p id="pHeight"></p>
+        <p id="pJob"></p>
+    </div>
+
+    <button id="rejectBtn">❌</button>
+    <button id="likeBtn">❤️</button>
+</section>
+
+<script src="app.js"></script>
+
+
+
+</body>
+</html>
